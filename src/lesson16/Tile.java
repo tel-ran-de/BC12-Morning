@@ -15,20 +15,37 @@ public class Tile {
 	static double roomPayment = 0;
 	static double workHourPayment = 0;
 	static double roomTileMaterialCOst = 0;
-	static int tileCountMin = 0;
-	static int tileCountMax = 0;
+	static int tileCountMinInt = 0;
+	static int tileCountMinAll = 0;
+	static int tileCountMinBroken = 0;
+	static int tileCountMaxInt = 0;
+	static int tileCountMaxAll = 0;
+	static int tileCountMaxBroken = 0;
+
 
 	public static void customerInfo(double h, double w, double tilePriceUnit) {
 		h *= 100;
 		w *= 100;
-		countTile(h, w);
-		brokenTile(h, w);
+		//вдоль
+		tileCountMinInt = countTile(h, w);
+		tileCountMinBroken = countBrokenTile(h, w);
+		tileCountMinAll = tileCountMinInt + tileCountMinBroken;
+		//поперёк
+		tileCountMaxInt = countTile(w, h);
+		tileCountMaxBroken = countBrokenTile(w, h);
+		tileCountMaxAll = tileCountMaxInt + tileCountMaxBroken;
 
 		System.out.println("Итоговая стоимость укладки плитки в комнате " + roomPayment);
 		System.out.println("Стоимость рабочего времени" + workHourPayment);
 		System.out.println("Стоимость материала" + roomTileMaterialCOst);
-		System.out.println("Ориентировочное количество плиток от " + tileCountMin
-				+ " и до " + tileCountMax);
+		System.out.println(
+				"При раскладке вдоль понадобится целых плиток: " + tileCountMinAll
+						+ " из них поломанных: " + tileCountMinBroken
+						+ " из них целых: " + tileCountMinInt);
+		System.out.println(
+				"При раскладке ПОПЕРЁК понадобится целых плиток: " + tileCountMaxAll
+						+ " из них поломанных: " + tileCountMaxBroken
+						+ " из них целых: " + tileCountMaxInt);
 	}
 
 	private static int countTile(double h, double w) {
@@ -37,20 +54,16 @@ public class Tile {
 
 		aCross = (int) (w / widthTile);
 		aLong = (int) (h / highTile);
-		System.out.println("промежуточное значение ЦЕЛЫХ плиток " + aCross * aLong);
 		return aCross * aLong;
 	}
 
-	private static int brokenTile(double h, double w) {
+	private static int countBrokenTile(double h, double w) {
 		int aLong = 0;  // вдоль  комнаты
 		int aCross = 0;  // поперёк комнаты
 
 		aCross = (int) (Math.ceil(w / widthTile));
 		aLong = (int) (Math.ceil(h / highTile));
-		System.out.println("Округлённое значение всех плиток " + aCross * aLong);
-
-
-		return aCross * aLong;
+		return aCross * aLong - countTile(h, w);
 	}
 
 }
