@@ -7,7 +7,7 @@ package lesson16;
  * https://github.com/tel-ran-de/BC12-Morning/blob/master/016-Java-Review-and-Tasks.md  задача про плитки
  */
 public class Tile {
-	static double speed = 1.0;
+	static double speed = 1.5;
 	static double oneHourPayment = 27;
 	static double highTile = 30;
 	static double widthTile = 10;
@@ -34,10 +34,13 @@ public class Tile {
 		tileCountMaxInt = countTile(w, h);
 		tileCountMaxBroken = countBrokenTile(w, h);
 		tileCountMaxAll = tileCountMaxInt + tileCountMaxBroken;
+		roomTileMaterialCOst = findMaterialCost(h, w, tilePriceUnit);
+		workHourPayment = oneHourPayment * h * w / (10000 * speed);
+		roomPayment = (workHourPayment + roomTileMaterialCOst) * 1.19;
 
-		System.out.println("Итоговая стоимость укладки плитки в комнате " + roomPayment);
-		System.out.println("Стоимость рабочего времени" + workHourPayment);
-		System.out.println("Стоимость материала" + roomTileMaterialCOst);
+		System.out.println("Итоговая стоимость укладки плитки в комнате + 19% MwSt" + roomPayment);
+		System.out.println("Стоимость рабочего времени " + workHourPayment);
+		System.out.println("Стоимость материала по максимуму " + roomTileMaterialCOst + "€");
 		System.out.println(
 				"При раскладке вдоль понадобится целых плиток: " + tileCountMinAll
 						+ " из них поломанных: " + tileCountMinBroken
@@ -66,4 +69,14 @@ public class Tile {
 		return aCross * aLong - countTile(h, w);
 	}
 
+	private static double findMaterialCost(double h, double w, double money) {
+		int a, b;
+		a = (countTile(h, w) + countBrokenTile(h, w));
+		b = (countTile(w, h) + countBrokenTile(w, h));
+		if (a > b) {
+			return a * money;
+		} else {
+			return b * money;
+		}
+	}
 }
