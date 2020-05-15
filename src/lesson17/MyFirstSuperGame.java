@@ -17,7 +17,7 @@ public class MyFirstSuperGame {
 		int max = 100;
 		int k = 0;
 		int randomDigit = myRandom(min, max);
-		System.out.println("Техническая распечатка randomDigit: " + randomDigit);
+		//System.out.println("Техническая распечатка randomDigit: " + randomDigit);
 		int guessDigit = 0;
 
 		String win = "You Win!!!";
@@ -30,11 +30,11 @@ public class MyFirstSuperGame {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Приветствую вас на голодных играх!\n" +
 				"Сколько попыток вам дать?\n" +
-				"Рекомендованное количество попыток от трёх до десяти:");
+				"Выберите уровень сложности 1 или 2 или 3 :");
 		k = input.nextInt();
 
 		for (int i = 0; i < k; i++) {
-			
+
 			System.out.println("Угадай-ка загаданное мною число, ты кожаный мешок с костями!");
 			guessDigit = input.nextInt();
 
