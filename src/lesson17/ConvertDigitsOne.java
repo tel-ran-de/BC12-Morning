@@ -2,7 +2,7 @@ package lesson17;
 
 import java.util.Scanner;
 
-public class ConvertDigits {
+public class ConvertDigitsOne {
 
 	public static void decimalToBinar() {
 
