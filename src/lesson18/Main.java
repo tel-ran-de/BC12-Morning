@@ -1,3 +1,5 @@
+package lesson18;
+
 import lesson18.ConvertDigits;
 
 public class Main {
@@ -13,5 +15,6 @@ public class Main {
 		//convertBinaryToDecimal();
 		//convertDecimalToBinary();
 		System.out.println(ConvertDigits.convertBinaryToAnything(10101010, 8));
+
 	}
 }
