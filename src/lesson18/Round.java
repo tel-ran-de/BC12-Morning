@@ -8,15 +8,19 @@ package lesson18;
 public class Round {
 	public static double roundDigit(double digitNumber, int index) {
 		int multiplucator = 10;
-		for (int i = 0; i < index; i++) {
-			multiplucator *= index;
+		int result = 1;
+		for (int i = 1; i <= index; i++) {
+			result = result * multiplucator;
 		}
-		System.out.println("Multiplicator " + multiplucator);
 
-		int temp = (int) (digitNumber * multiplucator);
-		System.out.println(temp);
+		int temp = (int) (digitNumber * result);
 		double tempTwo = temp;
 
-		return tempTwo / multiplucator;
+		return tempTwo / result;
+	}
+
+	public static double roundDigitOneLine(double dNumber, int index) {
+		int multiplikator = 10;
+		return (int) (dNumber * Math.pow(multiplikator, index)) / Math.pow(multiplikator, index);
 	}
 }
