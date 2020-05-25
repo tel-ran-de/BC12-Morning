@@ -1,0 +1,1 @@
+https://www.ampproject.org/ru/docs/getting_started/create/basic_markup

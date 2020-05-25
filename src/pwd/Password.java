@@ -18,7 +18,7 @@ public class Password {
 	private static String pwdGenerate(int passwordLength) {
 		String myPassword = "";
 
-		for (int i = 0; i < passwordLength; i++) {
+		for (int i = 0; i < passwordLength - 1; i++) {
 			if (i % 10 == 0) {
 				myPassword = generateDigitsSymbol() + myPassword;
 			} else if (i % 2 == 0) {
