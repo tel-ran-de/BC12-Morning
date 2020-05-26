@@ -7,6 +7,8 @@
     countYZ("day fyyyz") → 2
     ```
 2. We'll say that a lowercase 'g' in a string is "happy" if there is another 'g' immediately to its left or right. Return true if all the g's in the given string are happy.
+
+    Скажем, что строчная 'g' в строке "счастлива", если есть еще одна 'g' сразу слева или справа от нее. Возвращаем true, если все g в данной строке счастливы.
     ```
     gHappy("xxggxx") → true
     gHappy("xxgxx") → false
@@ -25,11 +27,7 @@
     sumNumbers("7 11") → 18
     ```
 5. Given two strings, base and remove, return a version of the base string where all instances of the remove string have been removed (not case sensitive). You may assume that the remove string is length 1 or more. Remove only non-overlapping instances, so with "xxx" removing "xx" leaves "x".
-    ```
-    withoutString("Hello there", "llo") → "He there"
-    withoutString("Hello there", "e") → "Hllo thr"
-    withoutString("Hello there", "x") → "Hello there"
-    ```
+     
 6. We'll say that a "triple" in a string is a char appearing three times in a row. Return the number of triples in the given string. The triples
  may overlap.
     ```
