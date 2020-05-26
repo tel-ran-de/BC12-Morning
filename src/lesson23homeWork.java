@@ -14,7 +14,7 @@ public class lesson23homeWork {
 		myPalindrome = myPalindrome.toLowerCase().replace(" ", "");
 		boolean result = false;
 		String reversePalindrome = "";
-		
+
 		for (int i = 0; i < myPalindrome.length(); i++) {
 			reversePalindrome = myPalindrome.charAt(i) + reversePalindrome;
 		}
