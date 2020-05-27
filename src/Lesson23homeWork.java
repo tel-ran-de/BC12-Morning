@@ -3,7 +3,7 @@
  * User: andron13
  * Date: 26.05.2020; Time: 09:37
  */
-public class lesson23homeWork {
+public class Lesson23homeWork {
 	public static void main(String[] args) {
 		System.out.println(checkPalindrome("Andrej"));
 		System.out.println(checkPalindrome("поп"));

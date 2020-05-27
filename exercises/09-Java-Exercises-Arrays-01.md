@@ -10,18 +10,24 @@
     firstLast6([13, 6, 1, 2, 3]) → false
     ```
 2. Given 2 arrays of ints, a and b, return true if they have the same first element or they have the same last element. Both arrays will be length 1 or more.
+
+    Получив 2 массива int[], a и b, возвращаем **true**, если они имеют один и тот же первый или последний элемент. Оба массива будут длиной больше, либо равной единице.
     ```
     commonEnd([1, 2, 3], [7, 3]) → true
     commonEnd([1, 2, 3], [7, 3, 2]) → false
     commonEnd([1, 2, 3], [1, 3]) → true
     ```
 3. Given an array of ints length 3, return a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}.
+
+    Дан массив длиной 3, верните новый массив с элементами в обратном порядке, например {1, 2, 3} становится {3, 2, 1}.
     ```
     reverse3([1, 2, 3]) → [3, 2, 1]
     reverse3([5, 11, 9]) → [9, 11, 5]
     reverse3([7, 0, 0]) → [0, 0, 7]
     ```
 4. Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements.
+
+    Даны 2 массива int, a и b, каждый длиной 3, верните новый массив с длиной 2, содержащего среднее арифметическое элементов первоначальных массивов.
     ``` 
     middleWay([1, 2, 3], [4, 5, 6]) → [2, 5]
     middleWay([7, 7, 7], [3, 8, 0]) → [7, 8]
