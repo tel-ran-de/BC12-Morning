@@ -1,3 +1,5 @@
+package lesson24;
+
 /**
  * Created for BC12-Morning.
  * User: andron13
@@ -6,7 +8,7 @@
  * Заполните массив случайным числами и выведете максимальное, минимальное и среднее значение. Для генерации случайного числа используйте метод
  * Math.random(), который возвращает значение в промежутке [0, 1].
  */
-public class Lesson24 {
+public class Lesson24HomeWork {
 	public static void main(String[] args) {
 		myFirstArrayExercise(5);
 	}
