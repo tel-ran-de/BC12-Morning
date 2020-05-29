@@ -24,8 +24,27 @@ public class ArraysExercises {
 		myIntArrayPrint(reverse3(a2));
 		myIntArrayPrint(reverse3(a3));*/
 
+		/*
+		middleWay([1, 2, 3], [4, 5, 6]) → [2, 5]
+		middleWay([7, 7, 7], [7, 7, 7]) → [7, 8]
+		middleWay([5, 2, 9], [1, 4, 5]) → [2, 4]
+		 */
+/*		int[] a1 = new int[]{1, 2, 3};
+		int[] a2 = new int[]{4, 5, 6};
+		int[] b1 = new int[]{7, 7, 7};
+		int[] b2 = new int[]{3, 8, 0};
+		int[] c1 = new int[]{5, 2, 9};
+		int[] c2 = new int[]{1, 4, 5};*/
 
-/*		2
+/*		myIntArrayPrint(middleWay(a1, a2));  // [2, 5]
+		myIntArrayPrint(middleWay(b1, b2));  // [7, 8]
+		myIntArrayPrint(middleWay(c1, c2));  // [2, 4]*/
+/*		myIntArrayPrint(middleWayOriginal(a1, a2));
+
+		myIntArrayPrint(middleWayOriginal(b1, b2));
+		myIntArrayPrint(middleWayOriginal(c1, c2));*/
+
+
 		int[] a1 = new int[]{1, 2, 3};
 		int[] a2 = new int[]{7, 3};
 		int[] b1 = new int[]{1, 2, 3};
@@ -35,26 +54,18 @@ public class ArraysExercises {
 
 		System.out.println(commonEnd(a1, a2)); // true
 		System.out.println(commonEnd(b1, b2)); // false
-		System.out.println(commonEnd(c1, c2)); // true*/
+		System.out.println(commonEnd(c1, c2)); // true
 
-		/*
-		middleWay([1, 2, 3], [4, 5, 6]) → [2, 5]
-		middleWay([7, 7, 7], [7, 7, 7]) → [7, 8]
-		middleWay([5, 2, 9], [1, 4, 5]) → [2, 4]
-		 */
-		int[] a1 = new int[]{1, 2, 3};
-		int[] a2 = new int[]{4, 5, 6};
-		int[] b1 = new int[]{7, 7, 7};
-		int[] b2 = new int[]{3, 8, 0};
-		int[] c1 = new int[]{5, 2, 9};
-		int[] c2 = new int[]{1, 4, 5};
+		//
+	}
 
-/*		myIntArrayPrint(middleWay(a1, a2));  // [2, 5]
-		myIntArrayPrint(middleWay(b1, b2));  // [7, 8]
-		myIntArrayPrint(middleWay(c1, c2));  // [2, 4]*/
-		myIntArrayPrint(middleWayOriginal(a1, a2));
-		myIntArrayPrint(middleWayOriginal(b1, b2));
-		myIntArrayPrint(middleWayOriginal(c1, c2));
+	private static boolean commonEnd(int[] myLovelyArray1, int[] myNotLLovelyArray2) {
+		/*		boolean result = false;
+		if (a1[0] == a2[0] || a1[a1.length - 1] == a2[a2.length - 1]) {
+			result = true;
+		}
+		return result;*/
+		return myLovelyArray1[0] == myNotLLovelyArray2[0] || myLovelyArray1[myLovelyArray1.length - 1] == myNotLLovelyArray2[myNotLLovelyArray2.length - 1];
 	}
 
 	private static int[] middleWayOriginal(int[] array1, int[] array2) {
@@ -80,14 +91,6 @@ public class ArraysExercises {
 		return middle / array.length;
 	}
 
-	private static boolean commonEnd(int[] a1, int[] a2) {
-/*		boolean result = false;
-		if (a1[0] == a2[0] || a1[a1.length - 1] == a2[a2.length - 1]) {
-			result = true;
-		}
-		return result;*/
-		return a1[0] == a2[0] || a1[a1.length - 1] == a2[a2.length - 1];
-	}
 
 	public static boolean firstLast6(int[] args) {
 		//boolean result = false;
@@ -114,6 +117,4 @@ public class ArraysExercises {
 			System.out.println(elementik);
 		}
 	}
-
-
 }

@@ -61,9 +61,9 @@ public class BubbleSort {
 				arrUnsort[i + 1] = temp;
 				count++;
 			}
+		}
 		if (count > 0) {
 			bubbleSort(arrUnsort);
-		}
 	}
 
 	public static void main(String[] args) {
