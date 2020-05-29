@@ -15,12 +15,14 @@ public class JustBoolean {
 		System.out.println(no23(b)); //false
 		System.out.println(no23(c)); //false
 	}
-	public static void trip(boolean vacation, boolean weekend){
-		if(vacation || !weekend){
+
+	public static void trip(boolean vacation, boolean weekend) {
+		if (vacation || !weekend) {
 			System.out.println("Мы едем в отупск");
 		}
 		System.out.println("мы никуда не едем");
 	}
+
 	public static boolean no23(int[] args) {
 		for (int i = 0; i < args.length; i++) {
 			if (args[i] == 2 || args[i] == 3) {
@@ -29,4 +31,5 @@ public class JustBoolean {
 		}
 		return true;
 	}
+
 }
