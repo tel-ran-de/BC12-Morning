@@ -1,25 +1,26 @@
-package sort;
+package sort.comb;
 
-public class CombSort {
+public class CombSortCorrupted {
     public static void main(String[] args) {
         int[] array = {104, 64, 34, 25, 12, 22, 11, 90, 13};
         myArrayPrint(comb(array));
     }
 
     private static int[] comb(int[] array) {
-        double stepConstant = 1.2473309;
+        double factor = 1.2473309;
         int step = array.length;
         boolean unsorted = true;
-        int count = 0;
-        while (unsorted) {
+
+        while (unsorted || step != 1) {
+            int count = 0;
             if (step > 1) {
-                step = (int) (step / stepConstant);
+                step = (int) (step / factor);
             }
-            for (int i = 0, j = step; i < array.length - j; i++, j++) {
-                if (array[i] > array[j]) {
+            for (int i = 0; i < array.length - step; i++) {
+                if (array[i] > array[i + step]) {
                     int temp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
+                    array[i] = array[i + step];
+                    array[i + step] = temp;
                     count++;
                 }
             }
