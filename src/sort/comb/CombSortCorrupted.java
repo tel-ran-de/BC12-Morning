@@ -17,10 +17,11 @@ public class CombSortCorrupted {
                 step = (int) (step / factor);
             }
             for (int i = 0; i < array.length - step; i++) {
-                if (array[i] > array[i + step]) {
+                int j = i + step;
+                if (array[i] > array[j]) {
                     int temp = array[i];
-                    array[i] = array[i + step];
-                    array[i + step] = temp;
+                    array[i] = array[j];
+                    array[j] = temp;
                     count++;
                 }
             }

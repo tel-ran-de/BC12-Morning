@@ -1,4 +1,4 @@
-package sort;
+package sort.bubble;
 
 /**
  * Created for BC12-Morning.
