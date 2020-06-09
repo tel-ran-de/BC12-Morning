@@ -1,9 +1,11 @@
 # # Урок по Git
 
 1) Нажимаем Fork репозитория (например у Андрея)
-2) Нажимем Clone
-3) В Terminal - git clone URL(скопированный заранее)git statuscd BC-12 ....git 
-statusДалее делаем ветку																						git checkout -b homework-29 - maria														3) открыть проект в IDEA
+2) Нажимаем Clone
+3) В Terminal - git clone URL(скопированный заранее)git status cd BC-12  
+    git status  Далее делаем ветку  
+    git checkout -b homework-29 - maria								
+3) открыть проект в IDEA
 4) открываем BC-12
 5) создать новый файл с названием 05June2020.mdв самом файле# Урок по Git
 попытка №1
