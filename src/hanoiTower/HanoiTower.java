@@ -32,4 +32,5 @@ public class HanoiTower {
         System.out.println("Перенесите диск со стержня под номером " + from + " на стержень под номером " + to);
         hanoiSolve(n - 1, additional, to, from);
     }
+
 }
