@@ -16,9 +16,9 @@ public class ExercisesArrayRecursion {
         //helloSubstring();
 
         //basic - recursion -09
-        String k = "ahixhi"; //1
+/*        String k = "ahixhi"; //1
         String l = "ahibhi"; //2
-        String m = "xhixhi"; //0
+        String m = "xhixhi"; //0*/
 //        String o = "xabdxk"; //0
 //        String p = "xxxxxxahihi"; //2
 //        System.out.println(countHi2(k));
@@ -60,9 +60,7 @@ public class ExercisesArrayRecursion {
                 } else {
                     return false;
                 }
-
             }
-
         }
         return count == three;
     }
