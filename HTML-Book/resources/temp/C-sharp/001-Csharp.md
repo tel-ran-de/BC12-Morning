@@ -16,7 +16,7 @@ namespace HelloWorld
 {
     class Hello
     {
-        static void obj.Main()
+        static void obj.obj.StartUno()
         {
             Console.WriteLine("Hello World!");
  

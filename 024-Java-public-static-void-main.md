@@ -8,10 +8,10 @@
 
 Давайте попробуем программировать без IDE по олдскульному.
 
-Создадим файл obj.Main.java
+Создадим файл obj.obj.StartUno.java
 
 ```Java
-public class obj.Main {
+public class obj.obj.StartUno {
 	public static void main(String[] args) {
 		for (String str : args) {
 			System.out.println("My arguments = " + str);
@@ -27,13 +27,13 @@ public class obj.Main {
 Скомпилируем файл:
 
 ```Java
-javac obj.Main.java
+javac obj.obj.StartUno.java
 ```
 
 и запустим:
 
 ```Java
-java obj.Main ich lerne deutsch
+java obj.obj.StartUno ich lerne deutsch
 ```
 
 на экране мы получим:

@@ -22,7 +22,7 @@ Junit базовое тестирование
 TestDrivengDevelopment - написание тестов перед написанием кода
 https://github.com/sergeylukichev/JavaCourse/blob/master/WordsSplit/WithFunctionalInterfaces/src/de/telran/transformer/Transformer.java
 
-https://github.com/sergeylukichev/JavaCourse/blob/master/StreamAPI/src/obj.Main.java
+https://github.com/sergeylukichev/JavaCourse/blob/master/StreamAPI/src/obj.obj.StartUno.java
 
 https://docs.google.com/spreadsheets/d/1EA5rop45h8OKjvrpvyYhO-5IJknw2deAic4voS5zXic/edit#gid=0
 
