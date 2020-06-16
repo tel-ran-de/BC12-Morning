@@ -5,7 +5,7 @@ drush sql-cli < ~/domains/abnehmen-zuhause.com/newdb/abnehmen.sql
 drush sql-dump > ~/domains/secretstyle.biz/180620secret.sql
 drush sql-dump > ~/domains-de/andron13.de/182206andron13.sql
 
-drush pm-list --type=module --status=enabled | sed '/\((.*)\)/!d;/[Cc]ore.*-.*[Rr]equired/d;s/.*(\(.*\)).*/\1/' | sort > noncoremod.txt
+drush pm-list --type=module --status=enabled | sed '/\((.*)\)/!d;/[Cc]ore.*-.*[Rr]equired/d;s/.*(\(.*\)).*/\1/' | imperative.sort > noncoremod.txt
 
 
 

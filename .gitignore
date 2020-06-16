@@ -1,6 +1,7 @@
 *.iml
-.vscode/*
 .idea/*
+
+.vscode/*
 .gradle
 /local.properties
 /.idea/libraries

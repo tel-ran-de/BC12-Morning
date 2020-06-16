@@ -8,7 +8,7 @@
 **. Как можно поменять их местами не создавая новую переменную.
 
 ```java
-public class Main {
+public class obj.Main {
     public static void main(String[] args) {
         int a = 5;
         int b = 3;
@@ -58,7 +58,7 @@ public class BubbleSort {
 ### Bubble Sort без рекурсии
 
 ```java
-public class Main {
+public class obj.Main {
     public static void bubbleSort(int[] array) {
         boolean unsorted = true;
         int temp;
@@ -82,7 +82,7 @@ public class Main {
 ```java
 import java.util.Arrays;
 
-public class Main {
+public class obj.Main {
     public static void main(String[] args) {
         String name = "Andrej";
         String[] array = name.split("");

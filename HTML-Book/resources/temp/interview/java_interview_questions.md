@@ -32,7 +32,7 @@
 12. What is the difference between equals() and == ?
 13. What is the difference between abstract classes and interfaces?
 14. What is method overloading and method overriding?
-15. Explain to me how can I compare/sort objects of the same class in Java
+15. Explain to me how can I compare/imperative.sort objects of the same class in Java
 16. What is the mutable/immutable object?
 17. What is singleton class and how can we make a class singleton?
 18. What are wrapper classes? (for Java primitives)

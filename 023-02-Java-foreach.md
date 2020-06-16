@@ -3,7 +3,7 @@
 Мы изучали цикл **for**, где в определённом диапазоне мы перебирали элементы. Существует брат уже изученного цикла - **for each** (фор ич). Который позволяет манипулировать со всеми элементами массива. Например
 
 ```Java
-public class Main {
+public class obj.Main {
 	public static void main(String[] args) {
 		arrayTryandCry((int) (Math.random() * 100));
 	}

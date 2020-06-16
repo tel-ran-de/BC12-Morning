@@ -44,9 +44,9 @@ public class Factorial{
 
 Все эти данные, массивы информации сортируются. Сейчас мы попробуем написать простейший алгоритм сортировки массива состоящего из чисел.
 
-### Пузырьковая сортировка - Bubble sort
+### Пузырьковая сортировка - Bubble imperative.sort
 
-![Пузырьковая сортировка или Bubble sort](res/soap-bubbles-025.jpg "Пузырьковая сортировка или Bubble sort")
+![Пузырьковая сортировка или Bubble imperative.sort](res/soap-bubbles-025.jpg "Пузырьковая сортировка или Bubble imperative.sort")
 
 ```Java
 import java.util.Arrays;
