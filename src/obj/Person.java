@@ -15,7 +15,7 @@ public class Person {
     char selfTotem;
 
     public Person() {
-        //Пустое
+        this.firstName = "Just student";
     }
 
     public Person(double personWeight, double personHeight) {
@@ -30,12 +30,15 @@ public class Person {
     }
 
 
-
     public void findBmiClassIndex() {
         double personWeight = weight;
         double personHeight = height / 100;
 
         bmi = personWeight / (personHeight * personHeight);
+    }
 
+    void myPrint() {
+        System.out.println(firstName + " firstName "
+                + "весит " + weight + " при росте " + height);
     }
 }

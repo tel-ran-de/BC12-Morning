@@ -1,5 +1,7 @@
 package obj;
 
+import java.util.Arrays;
+
 /**
  * BC12-Morning
  * 16 11 : 58
@@ -19,5 +21,11 @@ public class StartDos {
 
         dasha = new Person(65, 185);
         System.out.println("Индекс массы тела Даши " + dasha.bmi);
+        pasha = new Person();
+        glasha = new Person();
+        Person[] bm13morning = {sasha, pasha, dasha, glasha, misha};
+        glasha.myPrint();
+        System.out.println(Arrays.toString(bm13morning));
+
     }
 }

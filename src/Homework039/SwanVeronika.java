@@ -1,30 +1,30 @@
-package hw39;
+package Homework039;
 
-public class Swan {
+public class SwanVeronika {
     int age;
-    double ID;
-    String color;
+    double qrCode;
     boolean healthStatus;
     String gender;
+    String color;
 
-    public Swan() {
+    public SwanVeronika() {
         swim();
     }
 
-    public Swan(int swanAge, double swanNumber, String color, String gender) {
-        ID = swanNumber;
+    public SwanVeronika(int swanAge, double swanNumber, String color, String gender) {
+        qrCode = swanNumber;
         age = swanAge;
         eat();
-        System.out.println("Swan " + ID + " " + gender + ", " + age + " age, color is " + color);
+        System.out.println("Swan " + qrCode + " " + gender + ", " + age + " age, color is " + color);
     }
 
 
-    public Swan(int swanAge, double swanNumber) {
-        ID = swanNumber;
+    public SwanVeronika(int swanAge, double swanNumber) {
+        qrCode = swanNumber;
         age = swanAge;
         fly();
         fight(age);
-        System.out.println("The swan " + ID + " healthy status is " + healthStatus);
+        System.out.println("The swan " + qrCode + " healthy status is " + healthStatus);
     }
 
     void fly() {

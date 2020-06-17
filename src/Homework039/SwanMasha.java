@@ -1,8 +1,10 @@
+package Homework039;
+
 /**
  * BC12M_copy_1606
  * 16.06.2020
  */
-public class Ls39HW_Swan {
+public class SwanMasha {
     String color;
     boolean chicken;
     int age;

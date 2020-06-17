@@ -4,13 +4,13 @@ package Homework039;
  * BC12-Morning
  * 6/16/20 17: 15
  */
-public class StartForSwan {
+public class StartMaria {
     public static void main(String[] args) {
-        Swan firstSwan = new Swan();
+        SwanMaria firstSwan = new SwanMaria();
         firstSwan.IDSwan = new int[]{5, 9, 8, 9, 0, 5};
         firstSwan.weight = 7.0;
 
-        Swan secondSwan = new Swan();
+        SwanMaria secondSwan = new SwanMaria();
         secondSwan.IDSwan = new int[]{0, 9, 9, 9, 0, 6};
         secondSwan.weight = 2.0;
 

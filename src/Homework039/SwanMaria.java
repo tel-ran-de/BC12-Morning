@@ -3,7 +3,7 @@ package Homework039;
  * BC12-Morning
  * 6/16/20 17: 07
  */
-public class Swan {
+public class SwanMaria {
     int[] IDSwan; //ИД в базе
     double weight;
 
