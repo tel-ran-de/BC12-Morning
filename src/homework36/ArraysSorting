@@ -1,0 +1,44 @@
+package homework36;
+
+import java.util.Arrays;
+
+public class ArraySorting {
+    public static void main(String[] args) {
+        int[] array1 = new int[]{20, 54, 3, 10, 100};
+        int[] array2 = new int[]{130, 0, 1, 3, 10, 34, 39};
+        System.out.println(arraysSortingBuble(array1));
+        System.out.println(arraySortingSelection(array1));
+        System.out.println(arraySortingSelection(array2));
+    }
+
+    private static String arraySortingSelection(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            int least = i; //сохраняем значение темпоральной переменной цикла в переменной least
+            for (int j = i + 1; j < array.length; j++) { //проходим неотсортированную часть массива, начиная со второго члена
+                if (array[j] < array[least]) { //находим наименьшее число
+                    least = j; //сохраняем его в переменной least
+                }
+            }
+            int temp = array[i]; //меняем местами соседние цифры, если они соответствуют условиям if
+            array[i] = array[least]; //если нет - их значения не меняются, продолжаем фикл фор
+            array[least] = temp;
+        }
+        return Arrays.toString(array);
+    }
+
+    private static String arraysSortingBuble(int[] array) { //повторяю пузырьковую сортировку с рекурсией
+        int howMany = 0;
+        for (int i = 0; i < array.length - 1; i++) {
+            int temp = array[i];
+            if (array[i] > array[i + 1]) {
+                array[i] = array[i + 1];
+                array[i + 1] = temp;
+                howMany++;
+            }
+            if (howMany > 0) {
+                arraysSortingBuble(array);
+            }
+        }
+        return Arrays.toString(array);
+    }
+}
