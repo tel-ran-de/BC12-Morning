@@ -12,16 +12,18 @@ public class SwanVeronika {
     }
 
     public SwanVeronika(int swanAge, double swanNumber, String color, String gender) {
-        qrCode = swanNumber;
-        age = swanAge;
+        this.qrCode = swanNumber;
+        this.age = swanAge;
+        this.gender = gender;
+        this.color = color;
         eat();
         System.out.println("Swan " + qrCode + " " + gender + ", " + age + " age, color is " + color);
     }
 
 
     public SwanVeronika(int swanAge, double swanNumber) {
-        qrCode = swanNumber;
-        age = swanAge;
+        this.qrCode = swanNumber;
+        this.age = swanAge;
         fly();
         fight(age);
         System.out.println("The swan " + qrCode + " healthy status is " + healthStatus);
@@ -44,7 +46,7 @@ public class SwanVeronika {
     }
 
     void fight(int swanAge) {
-        age = swanAge;
+        this.age = swanAge;
         if (age < 3) {
             bit();
             healthStatus = true;
