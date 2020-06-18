@@ -10,7 +10,7 @@ public class Person {
     double height;
     int age;
     String gender;
-    double bmi;
+    private double bmi;
     boolean matriculation;
     char selfTotem;
 
@@ -19,9 +19,16 @@ public class Person {
     }
 
     public Person(double personWeight, double personHeight) {
+        this.weight = personWeight;
+        this.height = personHeight;
+
+        findBmiClassIndex();
+    }
+
+    public Person(String personName, double personWeight, double personHeight) {
         weight = personWeight;
         height = personHeight;
-
+        this.firstName = personName;
         findBmiClassIndex();
     }
 
@@ -29,6 +36,9 @@ public class Person {
         firstName = personName;
     }
 
+    public double getBmi() {
+        return bmi;
+    }
 
     public void findBmiClassIndex() {
         double personWeight = weight;
@@ -39,6 +49,18 @@ public class Person {
 
     void myPrint() {
         System.out.println(firstName + " firstName "
-                + "весит " + weight + " при росте " + height);
+                + "весит " + weight + " при росте " + height +
+                "\n Индекс массы тела: " + bmi);
     }
 }
+
+class PersonTest {
+    public static void main(String[] args) {
+        Person myLittlePerson = new Person("Сидоров", 90, 190);
+        myLittlePerson.myPrint();
+
+        System.out.println("БМИ вызванный через гетер " + myLittlePerson.getBmi());
+
+    }
+}
+
