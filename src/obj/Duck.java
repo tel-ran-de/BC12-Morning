@@ -9,7 +9,7 @@ public class Duck {
     int age;
     String color;
 
-    // утка плавать, крякать, летать, ест
+// утка плавать, крякать, летать, ест
 
 
     void swims(){
