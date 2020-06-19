@@ -1,4 +1,4 @@
-package HW41_TenBooks;
+package hw41.HW41_TenBooks;
 
 /**
  * FirstNewVersion

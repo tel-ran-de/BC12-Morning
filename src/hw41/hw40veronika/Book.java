@@ -1,4 +1,4 @@
-package hw41_veronika.hw40veronika;
+package hw41.hw40veronika;
 
 public class Book {
     int bookIsbn;

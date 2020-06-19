@@ -1,4 +1,4 @@
-package homework041;
+package hw41.homework041;
 
 /**
  * BC12-Morning

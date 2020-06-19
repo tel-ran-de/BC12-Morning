@@ -1,4 +1,4 @@
-package hw41_veronika.hw40veronika;
+package hw41.hw40veronika;
 
 public class LibraryStarts {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Obj_HomeWork41;
+package hw41.Obj_HomeWork41;
 
 import java.util.Arrays;
 
