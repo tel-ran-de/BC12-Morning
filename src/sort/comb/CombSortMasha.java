@@ -1,4 +1,4 @@
-package imperative.sort.comb;
+package sort.comb;
 
 public class CombSortMasha {
     public static void main(String[] args) {

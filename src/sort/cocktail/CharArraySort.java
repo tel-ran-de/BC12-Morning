@@ -1,4 +1,4 @@
-package imperative.sort.cocktail;
+package sort.cocktail;
 
 // 1. Массив символов -> Строковое значение -> Стринг массив
 // -> MyLovelyString    : отсортировать по алфавиту

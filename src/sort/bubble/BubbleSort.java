@@ -1,4 +1,4 @@
-package imperative.sort.bubble;
+package sort.bubble;
 
 /**
  * Created for BC12-Morning.

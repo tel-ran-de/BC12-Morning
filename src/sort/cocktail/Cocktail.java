@@ -1,4 +1,4 @@
-package imperative.sort.cocktail;
+package sort.cocktail;
 
 import java.util.Arrays;
 

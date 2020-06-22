@@ -1,4 +1,4 @@
-package imperative.sort;
+package sort;
 
 public class Swap {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package imperative.sort.cocktail;
+package sort.cocktail;
 
 public class Remember {
     public static void main(String[] args) {

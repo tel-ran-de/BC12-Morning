@@ -1,4 +1,4 @@
-package imperative.sort;
+package sort;
 
 import java.util.Arrays;
 
