@@ -1,13 +1,13 @@
 package imperative.review18;
 
-import org.apache.commons.lang3.ArrayUtils;
+
 
 /**
  * Created for BC12-Morning.
  * User: andron13
  * Date: 18.05.2020; Time: 12:09
  */
-public class Main {
+/*public class Main {
     public static void main(String[] args) {
         int a = 0x0;
         int b = 0x1;
@@ -18,4 +18,4 @@ public class Main {
 // Apache Commons Lang library
         int[] combinedIntArray = ArrayUtils.addAll(intArray, intArray2);
     }
-}
+}*/
