@@ -1,4 +1,4 @@
-package HomeWork43;
+package hw43.HomeWork43;
 
 import java.util.Arrays;
 

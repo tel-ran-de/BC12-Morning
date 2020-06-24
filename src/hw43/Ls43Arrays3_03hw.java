@@ -1,4 +1,4 @@
-package Exercises;
+package hw43;
 
 import java.util.Arrays;
 

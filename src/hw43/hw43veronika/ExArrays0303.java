@@ -1,4 +1,4 @@
-package hw43veronika;
+package hw43.hw43veronika;
 
 import java.util.Arrays;
 
