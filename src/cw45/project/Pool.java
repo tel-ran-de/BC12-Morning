@@ -8,6 +8,8 @@ import java.util.ArrayList;
  */
 public class Pool {
     public static ArrayList listOfAlcohol() {
+
+
         ArrayList<Alcohol> listOfAlcohol = new ArrayList<>();
 
         Alcohol beer = new Alcohol("Bier", 4.5);
