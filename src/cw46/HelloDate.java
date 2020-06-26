@@ -92,7 +92,6 @@ public class HelloDate {
         System.out.println(period.getChronology());
     }
 
-
     private static void haliHalloDate() throws ParseException {
         Date today = new Date();
         System.out.println(today);
