@@ -10,7 +10,7 @@ public class Person {
     private String firstName;
     private int height;  //cm
     private double weight; //kg
-    private Date birthDay;
+    private int age;
     public Gender gender;
     // vers alpha 002, made 24 june 2020
     // 11.00.01
@@ -19,11 +19,12 @@ public class Person {
     public Person() {
     }
 
-    public Person(String firstName, int height, double weight,  Gender gender) {
+    public Person(String firstName, int height, double weight, Gender gender, int age) {
         this.firstName = firstName;
         this.height = height;
         this.weight = weight;
         this.gender = gender;
+        this.age = age;
     }
 
     public String getFirstName() {
@@ -38,9 +39,6 @@ public class Person {
         return weight;
     }
 
-    public Date getBirthDay() {
-        return birthDay;
-    }
 
     public Gender getGender() {
         return gender;
@@ -62,13 +60,17 @@ public class Person {
         this.weight = weight;
     }
 
-    public void setBirthDay(Date birthDay) {
-        this.birthDay = birthDay;
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
 
 
-class PersonTest{
+class PersonTest {
     public static void main(String[] args) {
         Person p1 = new Person();
         p1.gender = Gender.FEMALE;
