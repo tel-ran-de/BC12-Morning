@@ -6,8 +6,8 @@ package project;
  */
 public class Main {
     public static void main(String[] args) {
-        Person igor = new Person("Игорь", 175, 86, Gender.MALE, 35);
-        Alcohol beer = new Alcohol("Bier", 4.5, 1000.0);
+        Person igor = new Person("Игорь", 175, 100, Gender.MALE, 35);
+        Alcohol beer = new Alcohol("Bier", 5, 1000.0);
 
         System.out.println("BAKformelWatson(igor, beer) " + BAKformelWatson(igor, beer));
 
@@ -30,7 +30,7 @@ public class Main {
         double r = 1.055 * gkwMan / (0.8 * weight);
 
         double alcoholInGram = drink.findAlcoholInGram();
-        System.out.println("alcoholInGram " + alcoholInGram);
+        System.out.println("alcoholInGram " + alcoholInGram); // ok
         return alcoholInGram / (weight * r);
     }
 }
